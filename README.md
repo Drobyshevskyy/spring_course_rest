@@ -18,6 +18,14 @@ When creating the REST API, we adhered to generally accepted standards:
 | DELETE  | api/employees/{employeeId}  | employee removal |
 <br>
 <br>
-
+All CRUD operations are performed using interfaces "EmployeeDAO", "EmployeeService" and classes "EmployeeDAOImpl", "EmployeeServiceImpl" that implements these interfaces
+<br>
+<br>
+Class "MyController" is used for calling methods from "EmployeeService" and throwing exceptions
+<br>
+<br>
+Exception handling is implemented in classes "EmployeeGlobalExceptionHandler", "EmployeeIncorrectData" and "NoSuchEmployeeException" of package "exception_handling"
+<br>
+<br>
 <h3>Configuration</h3>
 <h3>Testing</h3>
