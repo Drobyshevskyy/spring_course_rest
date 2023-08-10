@@ -25,5 +25,8 @@ Class "MyController" is used for calling methods from "EmployeeService" and thro
 <br>
 Exception handling is implemented in classes "EmployeeGlobalExceptionHandler", "EmployeeIncorrectData" and "NoSuchEmployeeException" of package "exception_handling"
 <h3>Configuration</h3>
+Project is created from Maven archetype "maven-archetype-webapp"<br>
+Deployment to the server is performed by Tomcat<br>
+The configuration of Spring Container and database connection is the responsibility of file "MyConfig.java" of package "configuration"<br>
 
 <h3>Testing</h3>
