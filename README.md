@@ -16,6 +16,9 @@ When creating the REST API, we adhered to generally accepted standards:
 | POST  | api/employees  | adding an employee |
 | PUT  | api/employees  | employee updating |
 | DELETE  | api/employees/{employeeId}  | employee removal |
+
+Our application communicates with the database using Hibernate
+<br>
 <br>
 All CRUD operations are performed using interfaces "EmployeeDAO", "EmployeeService" and classes "EmployeeDAOImpl", "EmployeeServiceImpl" that implements these interfaces
 <br>
@@ -28,5 +31,6 @@ Exception handling is implemented in classes "EmployeeGlobalExceptionHandler", "
 Project is created from Maven archetype "maven-archetype-webapp"<br>
 Deployment to the server is performed by Tomcat<br>
 The configuration of Spring Container and database connection is the responsibility of file "MyConfig.java" of package "configuration"<br>
-
+"MyWebInitializer.java" class is responsible for DispatcherServlet
 <h3>Testing</h3>
+In order to test all CRUD operations using all HTTP methods we resorted to the "Postman" application
