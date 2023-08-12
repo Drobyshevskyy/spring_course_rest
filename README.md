@@ -23,7 +23,7 @@ Our application communicates with the database using Hibernate
 All CRUD operations are performed using interfaces "EmployeeDAO", "EmployeeService" and classes "EmployeeDAOImpl", "EmployeeServiceImpl" that implements these interfaces
 <br>
 <br>
-Class "MyController" is used for calling methods from "EmployeeService" and throwing exceptions
+Class "MyRESTController" is used for calling methods from "EmployeeService" and throwing exceptions
 <br>
 <br>
 Exception handling is implemented in classes "EmployeeGlobalExceptionHandler", "EmployeeIncorrectData" and "NoSuchEmployeeException" of package "exception_handling"
